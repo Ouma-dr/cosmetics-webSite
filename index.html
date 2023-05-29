@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="imgs/logo.jpg" alt=""></a>
+    
+
+        <form action="" class="form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="#home">home</a>
+        <a href="#shop">shop</a>
+        <a href="#gallery">gallery</a>
+        <a href="#team">team</a>
+        <a href="#arrivals">arrivals</a>
+        <a href="#contact">contact</a>
+    </div>
+
+
+    <section class="home" id="home">
+        <div class="slide active">
+            <div class="content">
+                <img src="imgs/girl1.jpg" alt="">
+                <span>new arrivals </span>
+                <h3>cosmetics</h3>
+                <a href="#" class="btn">learn more</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="imgs/girl1.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <img src="imgs/acc.jpg" alt="">
+                <span>new arrivals </span>
+                <h3>accessories</h3>
+                <a href="#" class="btn">learn more</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="imgs/acc.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <img src="imgs/girl3.jpg" alt="">
+                <span>new arrivals </span>
+                <h3>skin care</h3>
+                <a href="#" class="btn">learn more</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="imgs/girl3.jpg" alt="">
+            </div>
+        </div>
+    
+    </section>
+
+
+    <section class="category" id="category">
+        <a href="#" class="box">
+            <img src="imgs/cat1.jpg" alt="">
+            <h3>cosmetics</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="imgs/cat2.jpg" alt="">
+            <h3>makeup</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="imgs/cat3.jpg" alt="">
+            <h3>powder</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="imgs/cat4.jpg" alt="">
+            <h3>lotions</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="imgs/cat5.jpg" alt="">
+            <h3>lipstick</h3>
+        </a>
+        <a href="#" class="box">
+            <img src="imgs/cat6.jpg" alt="">
+            <h3>mascara</h3>
+        </a>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="content">
+            <span>why choose us?</span>
+            <h3>makeup makes difference</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, assumenda doloremque illum nisi sapiente delectus dolore eveniet excepturi natus quasi.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+    </section>
+
+    <section class="shop" id="shop">
+        <div class="heading">
+            <h1>featured products</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis culpa suscipit cupiditate reiciendis recusandae excepturi.</p>
+        </div>
+        <div class="swiper products-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod1.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod2.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod3.png" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod4.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod5.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod6.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="imgs/prod7.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>products</p>
+                        <div class="price">$25.99 <span>$65.99</span></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="heading">
+            <h1>our gallery</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis culpa suscipit cupiditate reiciendis recusandae excepturi.</p>
+        </div>
+        <div class="lightbox">
+            <div class="img-box">
+                <a href="#"><img src="imgs/gal1.jpg" alt=""></a>
+            </div>
+            <div class="img-box">
+                <a href="#"><img src="imgs/gal2.jpg" alt=""></a>
+            </div>
+            <div class="img-box">
+                <a href="#"><img src="imgs/gal3.jpg" alt=""></a>
+            </div>
+            <div class="img-box">
+                <a href="#"><img src="imgs/gal4.jpg" alt=""></a>
+            </div>
+            <div class="img-box">
+                <a href="#"><img src="imgs/gal5.jpg" alt=""></a>
+            </div>
+            <div class="img-box">
+                <a href="#"><img src="imgs/gal6.jpg" alt=""></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="heading">
+            <h1>our team</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis culpa suscipit cupiditate reiciendis recusandae excepturi.</p>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="imgs/team1.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                        <h3>Oumaima</h3>
+                        <p>make-up artist</p>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="imgs/team2.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Oumaima</h3>
+                    <p>make-up artist</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="imgs/team3.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Oumaima</h3>
+                    <p>make-up artist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="arrivals" id="arrivals">
+        <div class="heading">
+            <h1>our arrivals</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis culpa suscipit cupiditate reiciendis recusandae excepturi.</p>
+        </div>
+        <div class="swiper arrivals-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imgs/arr1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">$50.99</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imgs/arr2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">$50.99</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imgs/arr3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">$50.99</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imgs/arr4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">$50.99</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imgs/arr5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">$50.99</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imgs/arr6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">$50.99</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <section class="reviews">
+        <div class=" swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="imgs/user1.jpg" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aperiam dignissimos nulla iure laborum error?</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="imgs/user2.jpg" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aperiam dignissimos nulla iure laborum error?</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="imgs/user3.jpg" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aperiam dignissimos nulla iure laborum error?</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="imgs/user4.jpg" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aperiam dignissimos nulla iure laborum error?</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="imgs/user5.jpg" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aperiam dignissimos nulla iure laborum error?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="box">
+            <img src="imgs/service1.png" alt="">
+            <h3>free livraison</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="box">
+            <img src="imgs/service2.jpg" alt="">
+            <h3>secure payment</h3>
+            <p>Lorem ipsum dolor sit amet .</p>
+        </div>
+        <div class="box">
+            <img src="imgs/service3.jpg" alt="">
+            <h3>support</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>cosmetics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus labore vel quae dolores iste itaque corporis tenetur perspiciatis exercitationem? Perspiciatis.</p>
+                <div class="contact">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+                
+            </div>
+            <div class="box">
+                <h3>link</h3>
+                <div class="links">
+                    <a href="#home">home</a>
+                    <a href="#shop">shop</a>
+                    <a href="#gallery">gallery</a>
+                    <a href="#team">team</a>
+                    <a href="#arrivals">arrivals</a>
+                    <a href="#contact">contact</a>
+                </div>
+                
+            </div>
+            <div class="box">
+                <h3>get in touch</h3>
+                <div class="icons">
+                    <i class="fas fa-phone"><span> +22 000 000</span></i>
+                    <i class="fas fa-envelope"><span>cosmetics@gmail.com</span></i>
+                </div>
+                
+                <a href="#" class="btn">send a message</a>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="copyright">
+        <p> &#169; copyright reserved | by dr-oumaima</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
